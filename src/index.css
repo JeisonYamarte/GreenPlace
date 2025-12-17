@@ -17,3 +17,14 @@
   --color-text: 34 34 34;
   --color-text-muted: 107 114 128;
 }
+
+@layer base {
+  body {
+    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))] font-sans;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Infant', serif;
+  }
+}
