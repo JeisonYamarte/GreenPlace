@@ -21,7 +21,7 @@ export default function HeroCarousel() {
   }, [])
 
   return (
-    <div className="relative min-h-screen w-full max-w-4xl mx-auto h-96 overflow-hidden rounded-lg">
+    <div className="relative w-full max-w-4xl mx-auto h-full overflow-hidden rounded-lg">
       <div 
         className="relative flex transition-transform duration-1500 ease-in-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -35,7 +35,7 @@ export default function HeroCarousel() {
           />
         ))}
       </div>
-      <div className='absolute inset-0 bg-black opacity-50' />
+      <div className='absolute inset-0 bg-black opacity-30' />
       <h1 className="absolute bottom-[50%] left-[50%] translate-x-[-50%] translate-y-[50%] text-6xl md:text-7xl font-bold text-white z-10">
         <span className="bg-linear-to-r from-[#97A87A] via-[#B5C99A] to-[#97A87A] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
           GreenPlace
