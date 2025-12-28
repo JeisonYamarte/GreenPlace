@@ -11,11 +11,10 @@ export default function Navbar() {
       <nav className="w-full mt-2">
           <hr className="border-[rgb(var(--color-secondary))] mb-2 mt-2" />
         <ul className="flex gap-2 justify-between text-sm font-medium text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-          <li>Home</li>
-          <li>About</li>
-          <li>Products</li>
-          <li>Courses</li>
-          <li>Contact</li>
+          <li>sobre nosotros</li>
+          <li>Productos</li>
+          <li>Cursos</li>
+          <li>Contacto</li>
         </ul>
       </nav>
 
