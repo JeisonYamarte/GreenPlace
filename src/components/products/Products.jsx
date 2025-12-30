@@ -1,7 +1,13 @@
 import { useState } from 'react'
-import { motion } from 'motion/react'
+import { motion, AnimatePresence } from 'motion/react'
 import ProductCard from './ProductCard'
-import { productsFlowers } from './products.data'
+import { 
+    productsFlowers, 
+    productsCharacters, 
+    productsHats, 
+    productsAccessories,
+    productsOthers
+} from './products.data'
 
 const categories = ['FLORES', 'PERSONAJES', 'GORROS', 'ACCESORIOS', 'OTROS'];
 
@@ -12,7 +18,26 @@ export default function Products() {
 
     const handleCategoryChange = (newCategory) => {
         setCategory(newCategory);
-        // Aquí puedes agregar lógica para filtrar productos según la categoría seleccionada
+        switch (newCategory) {
+            case 'FLORES':
+                setProductsToShow(productsFlowers);
+                break;
+            case 'PERSONAJES':
+                setProductsToShow(productsCharacters);
+                break;
+            case 'GORROS':
+                setProductsToShow(productsHats);
+                break;
+            case 'ACCESORIOS':
+                setProductsToShow(productsAccessories);
+                break;
+            case 'OTROS':
+                setProductsToShow(productsOthers);
+                break;
+            default:
+                setProductsToShow(productsFlowers);
+                break;
+        }
     }
 
     return (
@@ -44,11 +69,28 @@ export default function Products() {
                     </ul>
                 </nav>
             </div>
-            <div className="grid h-full grid-cols-2 md:grid-cols-3">
-                {productsToShow.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                ))}
-            </div>
+            <motion.div 
+                className="grid h-full grid-cols-2 md:grid-cols-3"
+                initial="hidden"
+                animate="visible"
+                key={category}
+                variants={{
+                    hidden: { opacity: 0 },
+                    visible: {
+                        opacity: 1,
+                        transition: {
+                            staggerChildren: 0.15,
+                            delayChildren: 0.1
+                        }
+                    }
+                }}
+            >
+                <AnimatePresence mode="wait">
+                    {productsToShow.map((product, index) => (
+                        <ProductCard key={product.id} product={product} index={index} />
+                    ))}
+                </AnimatePresence>
+            </motion.div>
         </div>
     )
 }
