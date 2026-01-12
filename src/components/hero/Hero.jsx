@@ -1,5 +1,4 @@
 import HeroCarousel from './HeroCarousel'
-import HeroAnimationsLayer from './HeroAnimationsLayer'
 import Navbar from '../layout/Navbar'
 
 export default function Hero() {

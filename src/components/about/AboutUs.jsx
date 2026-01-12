@@ -1,37 +1,95 @@
 import { motion } from "motion/react"
+import Flower from "../SVG/flower1"
 export default function AboutUs() {
   return (
     <div className="bg-bg py-16">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-5xl mx-auto px-8 md:px-12">
-          <motion.p 
-            className="w-full md:w-1/2 text-left text-lg md:text-xl leading-relaxed text-gray-700"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            "Si tejer es lo que amo, técnicamente no es trabajo. Cada puntada es hecha con pasión y dedicación para crear piezas únicas que llenan de amor cada hogar."
-          </motion.p>
-          <motion.figure 
-            className="w-full md:w-1/2 flex flex-col items-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-green-400 rounded-full blur-2xl opacity-30 scale-105"></div>
-              <img
-                src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1766282025/579251247_24990190117297748_2200634465641701759_n_guqffs.jpg"
-                alt="Our Team"
-                className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl ring-4 ring-white ring-offset-4 ring-offset-bg"
-              />
-            </div>
-            <motion.figcaption className="mt-6 text-gray-600 text-lg font-medium">
-              — Valeria Garcia
-            </motion.figcaption>
-          </motion.figure>
+      <h2 className="text-center text-2xl mb-4 text-[#97A87A] font-semibold">Mas de GreenPlace</h2>
+        <div className="px-1 grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-auto">
+          
+          <div className="relative h-[70dvh] flex flex-col justify-center text-center gap-4">
+            <h3 className="font-bold text-4xl mb-4 z-20 text-[#3A3A3A]">HAZLO TU MISMO</h3>
+            <p className="text-[#6b6b6b] text-lg font-semibold z-20 mx-4">
+              Hazlo tu mismo es una iniciativa que busca empoderar a las personas para que creen sus propios tejidos y manualidades. Ofrecemos talleres, kits de materiales y recursos en línea para que puedas aprender y desarrollar tus habilidades creativas desde la comodidad de tu hogar.
+            </p>
+            <Flower 
+              className="absolute top-20 left-0 opacity-60 z-10 animate-spin-slow" 
+              width={100} 
+              height={100} 
+              innerFill="#F2D57E"
+              style={{ fill: "#97A87A" }}
+            />
+            <Flower 
+              className="absolute bottom-10 right-10 opacity-60 z-10 " 
+              width={150} 
+              height={150} 
+              innerFill="#97A87A"
+              style={{ fill: "#F2D57E" }}
+            ></Flower>
+            
+          </div>
+          
+          <figure className=" h-[70dvh] object-cover overflow-hidden">
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1767926169/WhatsApp_Image_2025-12-17_at_8.53.48_AM_mparho.jpg" alt="gg" />
+          </figure>
+
+          <div className="relative h-[70dvh] flex flex-col justify-center text-center gap-4">
+            <h3 className="font-bold text-4xl mb-4 z-20 text-[#3A3A3A]">
+              Amo el crochet y amo crear todo tipo de prendas y accesorios.
+            </h3>
+            <p className="text-[#6b6b6b] text-lg font-semibold z-20 mx-4">
+              "Entre mas ambiciosa es la idea, mas grande es la satisfaccion de lograrla"  
+            </p>
+            <Flower 
+              className="absolute botton-20 left-0 opacity-60 z-10 animate-spin-slow" 
+              width={100} 
+              height={100} 
+              innerFill="#F2D57E"
+              style={{ fill: "#97A87A" }}
+            />
+            <Flower 
+              className="absolute top-10 right-10 opacity-60 z-10 " 
+              width={150} 
+              height={150} 
+              innerFill="#97A87A"
+              style={{ fill: "#F2D57E" }}
+            ></Flower>
+            
+          </div>
+
+          <figure className=" h-[70dvh] object-cover overflow-hidden">
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/551013155_17944705692062249_4090516100098057064_n_rhwnvm.webp" alt="gg" />
+          </figure>
+
+          <div className="relative h-[70dvh] flex flex-col justify-center text-left gap-2">
+            <p className="text-[#6b6b6b] text-m font-semibold z-20 mx-4">
+              Hola, mi nombre es Valeria. Comencé a hacer crochet en paralelo con mis estudios como fonoaudiologa, y en los descansos entre clases logré asistir a cursos de tejido. Dediqué dos años a estos cursos, después de los cuales recibí un certificado. Pero allí aprendí las cosas más simples: cómo sostener el ganchillo, los tipos de puntos y cómo leer los diagramas.
+            </p>
+            <p className="text-[#6b6b6b] text-lg font-semibold z-20 mx-4 mt-4">
+              Para convertirse en un verdadero maestro del crochet o del tejido, no es en absoluto necesario graduarse de una universidad ni de cursos costosos. Todo lo que necesitas para comenzar es un ovillo de lana, un ganchillo o agujas de tejer, y tu deseo ilimitado de crear.
+            </p>
+            <Flower 
+              className="absolute botton-20 left-0 opacity-60 z-10 animate-spin-slow" 
+              width={100} 
+              height={100} 
+              innerFill="#F2D57E"
+              style={{ fill: "#97A87A" }}
+            />
+            <Flower 
+              className="absolute top-10 right-10 opacity-60 z-10 " 
+              width={150} 
+              height={150} 
+              innerFill="#97A87A"
+              style={{ fill: "#F2D57E" }}
+            ></Flower>
+            
+          </div>
+
+          <figure className=" h-[70dvh] object-cover overflow-hidden">
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1768223634/WhatsApp_Image_2025-12-17_at_8.53.47_AM_1_qckfdb.jpg" alt="gg" />
+          </figure>
+
         </div>
+        
     </div>
   )
 }
