@@ -43,9 +43,8 @@ const imageVariants = {
 export default function ProductCard({ product, index }) {
   return (
     <motion.figure
-      className="bg-white w-full h-full border-none overflow-hidden shadow-sm"
+      className="bg-white w-full h-full border-none overflow-hidden shadow-sm hover:none"
       variants={cardVariants}
-      whileHover={{ scale: 1.02, boxShadow: "0 16px 50px rgba(0,0,0,0.1)" }}
     >
       <motion.img
         className="w-full h-full object-cover"
