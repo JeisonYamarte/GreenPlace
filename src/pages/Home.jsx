@@ -1,7 +1,6 @@
 import Hero from '../components/hero/Hero'
 import AboutUs from '../components/about/AboutUs'
 import Products from '../components/products/Products'
-import HowWeDoIt from '../components/process/HowWeDoIt'
 import CTA from '../components/cta/CTA'
 import { Porpuse } from '../components/purpose/Porpuse'
 
@@ -18,7 +17,6 @@ export default function Home() {
       <Porpuse />
       <Products />
       <AboutUs />
-      <HowWeDoIt />
       <CTA />
     </div>
   )

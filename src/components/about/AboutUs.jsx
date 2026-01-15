@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 import Flower from "../SVG/flower1"
 export default function AboutUs() {
   return (
-    <div className="bg-bg py-16 w-full">
+    <div className="bg-bg w-full">
       <h2 className="text-center text-2xl mb-4 text-[#97A87A] font-semibold">Mas de GreenPlace</h2>
         <div className="px-1 grid md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-auto">
           
