@@ -41,7 +41,7 @@ export default function Products() {
     }
 
     return (
-        <div className="relative bg-bg h-screen object-contain">
+        <div id="products" className="relative bg-bg h-screen object-contain">
             <h2 className="text-center text-2xl mb-4">mira nuestro productos</h2>
             <div className='absolute w-full top-[50%] h-10 bg-gray-100/70 items-center flex z-10'>
                 <nav className='w-full h-full'>

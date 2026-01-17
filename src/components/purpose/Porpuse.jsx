@@ -36,7 +36,7 @@ export function Porpuse() {
         {icon: ClockCheck, title: 'comprometidos con tu tiempo', subtitle: 'Nos esforzamos por cumplir con los plazos acordados.'},
     ]
     return (
-    <div className="bg-bg py-16 grid grid-cols-2 justify-center gap-2 px-1">
+    <div id="aboutUs" className="bg-bg py-16 grid grid-cols-2 justify-center gap-2 px-1">
         {info.map((item, index) => (
             <Card 
                 key={index}

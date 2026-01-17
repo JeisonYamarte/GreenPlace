@@ -1,7 +1,6 @@
 export function SocialCard({ body, name, img }) {
   return (
     <figure className="relative flex flex-col gap-3 bg-[#F2D57E] min-h-48 w-44 p-4 cursor-pointer overflow-hidden rounded-2xl border border-gray-950/10 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
-      {/* Icono decorativo de comillas */}
       <span className="absolute top-2 right-3 text-4xl text-amber-700/20 font-serif">"</span>
 
       <div className="flex flex-row items-center gap-2">

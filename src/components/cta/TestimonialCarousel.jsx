@@ -18,6 +18,11 @@ export default function TestimonialCarousel() {
           <SocialCard key={index} body={review.text} name={review.author} img={review.img} />
         ))}
       </Marquee>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white/40 backdrop-blur-md px-6 py-3 rounded-full shadow-lg border border-gray-950/10 w-68 flex items-center justify-center h-16">
+        <h3 className="text-lg font-semibold text-gray-800 text-center  leading-tight"> 
+          Lo que dicen nuestros clientes
+        </h3>
+      </div>
       {/* Sombras para fade */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-[#FCF9EA] to-transparent z-10" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-[#97A87A] to-transparent z-10" />

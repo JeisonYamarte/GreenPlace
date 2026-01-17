@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 import Flower from "../SVG/flower1"
 export default function AboutUs() {
   return (
-    <div className="bg-bg w-full">
+    <div id="courses" className="bg-bg w-full">
       <h2 className="text-center text-2xl mb-4 text-[#97A87A] font-semibold">Mas de GreenPlace</h2>
         <div className="px-1 grid md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-1 h-auto">
           
@@ -34,7 +34,7 @@ export default function AboutUs() {
 
           <div className="relative sm:order-3 h-[70dvh] flex flex-col justify-center text-center gap-4 md:order-4 lg:order-3">
             <h3 className="font-bold text-4xl mb-4 z-20 text-[#3A3A3A]">
-              Amo el crochet y amo crear todo tipo de prendas y accesorios.
+              Amo el crochet y amo inspirar a otros a crear.
             </h3>
             <p className="text-[#6b6b6b] text-lg font-semibold z-20 mx-4">
               "Entre mas ambiciosa es la idea, mas grande es la satisfaccion de lograrla"  

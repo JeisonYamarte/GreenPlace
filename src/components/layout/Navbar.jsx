@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="absolute flex flex-col items-center justify-center p-4 bg-bg rounded-b-lg text-white h-auto z-10 w-full top-0">
+    <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center justify-center p-4 bg-bg rounded-b-lg text-white h-auto z-10 w-full top-0 max-w-3xl">
       <div className="flex flex-col items-center">
         <figure className="w-12 h-12 rounded-full overflow-hidden border-coral-500">
           <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/497957171_17930717010062249_363873050315841911_n_qiflyq.webp" alt="logo-green-place" />
@@ -11,10 +11,10 @@ export default function Navbar() {
       <nav className="w-full mt-2">
           <hr className="border-[rgb(var(--color-secondary))] mb-2 mt-2" />
         <ul className="flex gap-2 justify-between text-sm font-medium text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-          <li>sobre nosotros</li>
-          <li>Productos</li>
-          <li>Cursos</li>
-          <li>Contacto</li>
+          <li><a href="#aboutUs" className="hover:text-[#B5C99A] transition-colors">Sobre nosotros</a></li>
+          <li><a href="#products" className="hover:text-[#B5C99A] transition-colors">Productos</a></li>
+          <li><a href="#courses" className="hover:text-[#B5C99A] transition-colors">Cursos</a></li>
+          <li><a href="#contact" className="hover:text-[#B5C99A] transition-colors">Contacto</a></li>
         </ul>
       </nav>
 
