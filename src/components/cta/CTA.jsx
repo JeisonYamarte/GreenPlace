@@ -3,7 +3,7 @@ import { Footer } from './Footer'
 
 export default function CTA() {
   return (
-    <div className="h-dvh md:h-[70dvh] bg-bg">
+    <div className="h-svh md:h-[70svh] bg-bg">
       <TestimonialCarousel />
       <Footer />
     </div>

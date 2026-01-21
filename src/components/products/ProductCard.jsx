@@ -43,7 +43,7 @@ const imageVariants = {
 export default function ProductCard({ product, index }) {
   return (
     <motion.figure
-      className="bg-white w-full h-full border-none overflow-hidden shadow-sm hover:none"
+      className="bg-white w-full h-full border-none overflow-hidden shadow-sm  hover:none"
       variants={cardVariants}
     >
       <motion.img

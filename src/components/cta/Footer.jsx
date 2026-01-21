@@ -58,7 +58,7 @@ export function Footer() {
                     </svg>
                     </a>
                     <a 
-                    href="https://wa.me/c/584146109850" 
+                    href="https://api.whatsapp.com/send/?phone=584146109850" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-white/10 hover:bg-[#F2D57E] hover:text-[#97A87A] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"

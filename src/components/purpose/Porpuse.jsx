@@ -17,11 +17,11 @@ const Card = ({Icon, title, subtitle}) => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-3xl w-full mx-auto bg-bg rounded-lg text-center py-2"
+            className="w-full bg-bg rounded-lg text-center py-4 px-3 md:py-6 md:px-4"
         >
-            <Icon className="w-16 h-16 mx-auto mb-4 text-[#FF6F61]" />
-            <h2 className="text-xl font-bold mb-2 text-gray-800">{title}</h2>
-            <p className="text-gray-600/60">{subtitle}</p>
+            <Icon className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 text-[#FF6F61]" />
+            <h2 className="text-lg md:text-xl font-bold mb-2 text-gray-800">{title}</h2>
+            <p className="text-sm md:text-base text-gray-600/60">{subtitle}</p>
         </motion.div>
     )
 }
@@ -36,15 +36,17 @@ export function Porpuse() {
         {icon: ClockCheck, title: 'comprometidos con tu tiempo', subtitle: 'Nos esforzamos por cumplir con los plazos acordados.'},
     ]
     return (
-    <div id="aboutUs" className="bg-bg py-16 grid grid-cols-2 justify-center gap-2 px-1">
-        {info.map((item, index) => (
-            <Card 
-                key={index}
-                Icon={item.icon}
-                title={item.title}
-                subtitle={item.subtitle}
-            />
-        ))}
+    <div id="aboutUs" className="bg-bg sm:py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-12">
+        <div className=" max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 ">
+            {info.map((item, index) => (
+                <Card 
+                    key={index}
+                    Icon={item.icon}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                />
+            ))}
+        </div>
     </div>
     )
 }
