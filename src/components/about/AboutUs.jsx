@@ -2,14 +2,15 @@
 import Flower from "../SVG/flower1"
 export default function AboutUs() {
   return (
-    <section id="courses" className="bg-bg w-full mt-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="courses" className="bg-bg w-full mt-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 ">
       <h2 className="text-center text-xl sm:text-2xl mb-4 text-[#97A87A] font-semibold">Mas de GreenPlace</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
           
           <div className="relative order-1 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-center gap-3 sm:gap-4 py-8 px-4">
             <h3 className="font-bold text-2xl sm:text-3xl lg:text-4xl mb-2 sm:mb-4 z-20 text-[#3A3A3A]">HAZLO TU MISMO</h3>
             <p className="text-[#6b6b6b] text-sm sm:text-base lg:text-lg font-semibold z-20">
-              Hazlo tú mismo nace desde mi propia experiencia aprendiendo a tejer. Con el tiempo entendí que crear con las manos es algo que se puede aprender sin apuros ni tecnicismos, y hoy quiero compartirlo con otros a través de talleres, materiales y guías para aprender desde casa.</p>
+              Hazlo tú mismo nace desde mi propia experiencia aprendiendo a tejer. Con el tiempo entendí que crear con las manos es algo que se puede aprender sin apuros ni tecnicismos, y hoy quiero compartirlo con otros a través de talleres, materiales y guías para aprender desde casa.
+              </p>
             <Flower 
               className="absolute top-10 sm:top-20 left-0 opacity-60 z-10 animate-spin-slow" 
               width={70} 

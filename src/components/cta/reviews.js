@@ -96,4 +96,108 @@ export const reviews = [
         author: "Alejandro Acos",
         img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlejandroAcos67"
     },
+    {
+        text: "me encanta",
+        author: "Oretna Fuentes"
+    },
+    {
+        text: "naguara de bella",
+        author: "Oretna Fuentes"
+    },
+    {
+        text: "te pasaste",
+        author: "Oretna Fuentes"
+    },
+    {
+        text: "es que está preciosoo",
+        author: "Aileen"
+    },
+    {
+        text: "quedó hasta más lindo que en el de la foto",
+        author: "Aileen"
+    },
+    {
+        text: "un trabajo limpio y bello, me encantó",
+        author: "Ceylin"
+    },
+    {
+        text: "te pasaste!!!",
+        author: "Aileen"
+    },
+    {
+        text: "gracias, me encantó, está muy preciosote",
+        author: "Aliz Ruiz"
+    },
+    {
+        text: "Enamorada de vdd",
+        author: "Nicole Colmena"
+    },
+    {
+        text: "Cuando pueda te encargo otro",
+        author: "Nicole Colmena"
+    },
+    {
+        text: "Está precioso, muchas gracias",
+        author: "Nicole Colmena"
+    },
+    {
+        text: "Amiga deja de hacer cosas tan bonitas, te vas a quedar con todo mi dinero",
+        author: "Jhosseany Medi"
+    },
+    {
+        text: "Todo el mundo amó tu trabajo",
+        author: "Luis Vasquez"
+    },
+    {
+        text: "Eres la mejorrrr",
+        author: "Luis Vasquez"
+    },
+    {
+        text: "Me encantó el tulipán, muchas gracias",
+        author: "Ángel Pérez"
+    },
+    {
+        text: "Enamorada de tu lindo trabajo",
+        author: "Alaniss Berm"
+    },
+    {
+        text: "amiga wtf, de donde sacas tanta creatividad y talento, está divino",
+        author: "Jhosseany Medi"
+    },
+    {
+        text: "A mi esposa y a mi suegra le encantaron, gracias",
+        author: "Señor Carpa"
+    },
+    {
+        text: "Me gustaron mucho las fuchiballs",
+        author: "Nesca"
+    },
+    {
+        text: "Por cierto el CR7 10/10 como siempre",
+        author: "María Vict"
+    },
+    {
+        text: "Ya lo tengo, quedó espectacular",
+        author: "Valeria Gomez"
+    },
+    {
+        text: "Está hermoso, mi amor",
+        author: "Marianny Gómez"
+    },
+    {
+        text: "Ya tengo el pedido, están muy hermosos, muchísimas gracias nena, que Dios siga bendiciendo tu talento",
+        author: "Joseglis Madriz"
+    },
+    {
+        text: "Muchas gracias, me encanta, quedó mejor de como lo imaginaba. Dios bendiga tus manos. Fue el mejor regalo de cumpleaños",
+        author: "Edixon Acevedo"
+    },
+    {
+        text: "Este ramo quedó hermosísimo, es una cosa de otro nivel, agradecida",
+        author: "Ana Isabel Chávez"
+    },
+    {
+        text: "Estoy super encantada con lo lindo que quedó el Snoopy, está hermosísimo. Mi amiga lo va a amar cuando se lo entregue. Mil gracias",
+        author: "Mariangelica Petit"
+    }
 ]
