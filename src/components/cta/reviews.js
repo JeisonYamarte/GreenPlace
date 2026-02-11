@@ -4,200 +4,226 @@ export const reviews = [
     {
         text: "Dios bendiga ese negocio",
         author: "Alejandro Acos",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlejandroAcos"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlejandroAcos&backgroundColor=b6e3f4&radius=50"
     },
     {
         text: "Enamorada de tu hermoso trabajo, Dios te bendiga siempre",
         author: "Alaniss Berm",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlanissBerm"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlanissBerm&backgroundColor=c0aede&radius=50"
     },
     {
         text: "Te pasas de verdad que belleza precio bendiciones mi niña linda",
         author: "YrdeGarcia",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=YrdeGarcia"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=YrdeGarcia&backgroundColor=d1d4f9&radius=50"
     },
     {
         text: "Oye gracias, te quedó hermoso 100/10",
         author: "Jatniel Villan",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=JatnielVillan"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=JatnielVillan&backgroundColor=ffd5dc&radius=50"
     },
     {
         text: "Dios bendiga las manos maravillosas que hacen posible esas obras de arte entre agujas, hilos y mucho amor...",
         author: "Rodolfo Mendoz",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=RodolfoMendoz"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=RodolfoMendoz&backgroundColor=ffdfbf&radius=50"
     },
     {
         text: "Eres la mejor muchísimas gracias",
         author: "Alejandra",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=Alejandra"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Alejandra&backgroundColor=ffeee4&radius=50"
     },
     {
         text: "ESTAN SUPER CUCHIIIIS GRACIAAAAAAS",
         author: "Alejandra",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=Alejandra78"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Alejandra78&backgroundColor=d5f5e3&radius=50"
     },
     {
         text: "Mi vida muchas gracias, muy hermoso tanto el llaverito como la maceta",
         author: "Keiber Sánchez",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=KeiberSanchez34"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=KeiberSanchez&backgroundColor=aed6f1&radius=50"
     },
     {
         text: "Está demasiado lindo",
         author: "Massiel Ruiz",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=MassielRuiz61"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=MassielRuiz61&backgroundColor=f9e79f&radius=50"
     },
     {
         text: "Eres muy buenaaaa",
         author: "Alejandro Acos",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlejandroAcos29"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlejandroAcos29&backgroundColor=fadbd8&radius=50"
     },
     {
         text: "Me encantó",
         author: "Massiel Ruiz",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=MassielRuiz88"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=MassielRuiz88&backgroundColor=e8daef&radius=50"
     },
     {
         text: "Gracias a Dios lo empezaste. Raro es que haya alguien en pf que no conozca tu emprendimiento",
         author: "Orleannys Sanc",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=OrleannySanc42"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=OrleannySanc&backgroundColor=d4efdf&radius=50"
     },
     {
         text: "mi novio dijo q lo diste todoo, le encantoo",
         author: "Franchesca Men",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=FranchescaMen17"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=FranchescaMen&backgroundColor=fcf3cf&radius=50"
     },
     {
         text: "muchas gracias",
         author: "Aliz Ruiz",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlizRuiz53"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlizRuiz53&backgroundColor=ebdef0&radius=50"
     },
     {
         text: "A mi mamá le encantó",
         author: "Noel David",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=NoelDavid26"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NoelDavid26&backgroundColor=d6eaf8&radius=50"
     },
     {
         text: "Está precioso, de verdad muchas gracias por el regalito",
         author: "Noel David",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=NoelDavid74"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NoelDavid74&backgroundColor=fdebd0&radius=50"
     },
     {
         text: "Está precioso",
         author: "Noel David",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=NoelDavid95"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NoelDavid95&backgroundColor=e5e8e8&radius=50"
     },
     {
         text: "Y déjame decirte que amo su pingüinito rojo",
         author: "Wendy",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=Wendy38"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Wendy38&backgroundColor=f5b7b1&radius=50"
     },
     {
         text: "esta bellísimo como todo",
         author: "Alejandro Acos",
-        img: "https://testingbot.com/free-online-tools/random-avatar/200?u=AlejandroAcos67"
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlejandroAcos67&backgroundColor=a9dfbf&radius=50"
     },
     {
         text: "me encanta",
-        author: "Oretna Fuentes"
+        author: "Oretna Fuentes",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=OretnaFuentes1&backgroundColor=aeb6bf&radius=50"
     },
     {
         text: "naguara de bella",
-        author: "Oretna Fuentes"
+        author: "Oretna Fuentes",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=OretnaFuentes2&backgroundColor=f7dc6f&radius=50"
     },
     {
         text: "te pasaste",
-        author: "Oretna Fuentes"
+        author: "Oretna Fuentes",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=OretnaFuentes3&backgroundColor=bb8fce&radius=50"
     },
     {
         text: "es que está preciosoo",
-        author: "Aileen"
+        author: "Aileen",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Aileen1&backgroundColor=85c1e9&radius=50"
     },
     {
         text: "quedó hasta más lindo que en el de la foto",
-        author: "Aileen"
+        author: "Aileen",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Aileen2&backgroundColor=f1948a&radius=50"
     },
     {
         text: "un trabajo limpio y bello, me encantó",
-        author: "Ceylin"
+        author: "Ceylin",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Ceylin&backgroundColor=82e0aa&radius=50"
     },
     {
         text: "te pasaste!!!",
-        author: "Aileen"
+        author: "Aileen",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Aileen3&backgroundColor=f8c471&radius=50"
     },
     {
         text: "gracias, me encantó, está muy preciosote",
-        author: "Aliz Ruiz"
+        author: "Aliz Ruiz",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlizRuiz27&backgroundColor=d7bde2&radius=50"
     },
     {
         text: "Enamorada de vdd",
-        author: "Nicole Colmena"
+        author: "Nicole Colmena",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NicoleColmena1&backgroundColor=a3e4d7&radius=50"
     },
     {
         text: "Cuando pueda te encargo otro",
-        author: "Nicole Colmena"
+        author: "Nicole Colmena",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NicoleColmena2&backgroundColor=f9e79f&radius=50"
     },
     {
         text: "Está precioso, muchas gracias",
-        author: "Nicole Colmena"
+        author: "Nicole Colmena",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=NicoleColmena3&backgroundColor=d5dbdb&radius=50"
     },
     {
         text: "Amiga deja de hacer cosas tan bonitas, te vas a quedar con todo mi dinero",
-        author: "Jhosseany Medi"
+        author: "Jhosseany Medi",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=JhosseanyMedi1&backgroundColor=f5cba7&radius=50"
     },
     {
         text: "Todo el mundo amó tu trabajo",
-        author: "Luis Vasquez"
+        author: "Luis Vasquez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=LuisVasquez1&backgroundColor=aed6f1&radius=50"
     },
     {
         text: "Eres la mejorrrr",
-        author: "Luis Vasquez"
+        author: "Luis Vasquez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=LuisVasquez2&backgroundColor=a9cce3&radius=50"
     },
     {
         text: "Me encantó el tulipán, muchas gracias",
-        author: "Ángel Pérez"
+        author: "Ángel Pérez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AngelPerez&backgroundColor=d2b4de&radius=50"
     },
     {
         text: "Enamorada de tu lindo trabajo",
-        author: "Alaniss Berm"
+        author: "Alaniss Berm",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AlanissBerm2&backgroundColor=f9e79f&radius=50"
     },
     {
         text: "amiga wtf, de donde sacas tanta creatividad y talento, está divino",
-        author: "Jhosseany Medi"
+        author: "Jhosseany Medi",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=JhosseanyMedi2&backgroundColor=fadbd8&radius=50"
     },
     {
         text: "A mi esposa y a mi suegra le encantaron, gracias",
-        author: "Señor Carpa"
+        author: "Señor Carpa",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=SenorCarpa&backgroundColor=d5f5e3&radius=50"
     },
     {
         text: "Me gustaron mucho las fuchiballs",
-        author: "Nesca"
+        author: "Nesca",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Nesca&backgroundColor=e8daef&radius=50"
     },
     {
         text: "Por cierto el CR7 10/10 como siempre",
-        author: "María Vict"
+        author: "María Vict",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=MariaVict&backgroundColor=fdebd0&radius=50"
     },
     {
         text: "Ya lo tengo, quedó espectacular",
-        author: "Valeria Gomez"
+        author: "Valeria Gomez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=ValeriaGomez&backgroundColor=d4e6f1&radius=50"
     },
     {
         text: "Está hermoso, mi amor",
-        author: "Marianny Gómez"
+        author: "Marianny Gómez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=MariannyGomez&backgroundColor=f5b7b1&radius=50"
     },
     {
         text: "Ya tengo el pedido, están muy hermosos, muchísimas gracias nena, que Dios siga bendiciendo tu talento",
-        author: "Joseglis Madriz"
+        author: "Joseglis Madriz",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=JoseglisMadriz&backgroundColor=a9dfbf&radius=50"
     },
     {
         text: "Muchas gracias, me encanta, quedó mejor de como lo imaginaba. Dios bendiga tus manos. Fue el mejor regalo de cumpleaños",
-        author: "Edixon Acevedo"
+        author: "Edixon Acevedo",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=EdixonAcevedo&backgroundColor=85c1e9&radius=50"
     },
     {
         text: "Este ramo quedó hermosísimo, es una cosa de otro nivel, agradecida",
-        author: "Ana Isabel Chávez"
+        author: "Ana Isabel Chávez",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=AnaIsabelChavez&backgroundColor=f8c471&radius=50"
     },
     {
         text: "Estoy super encantada con lo lindo que quedó el Snoopy, está hermosísimo. Mi amiga lo va a amar cuando se lo entregue. Mil gracias",
-        author: "Mariangelica Petit"
+        author: "Mariangelica Petit",
+        img: "https://api.dicebear.com/9.x/pixel-art/svg?seed=MariangelicaPetit&backgroundColor=d7bde2&radius=50"
     }
 ]

@@ -22,9 +22,9 @@ export function Footer() {
             />
 
             <div className="container mx-auto px-6 relative z-10">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
                 
-                <div className="flex flex-col items-center md:items-start gap-3">
+                <div className="flex flex-col items-center justify-center md:items-start gap-3">
                 <div className="flex items-center gap-3">
                     <figure className="w-14 h-14 rounded-full overflow-hidden border-2 border-white/30 shadow-lg">
                     <img 
