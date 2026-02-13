@@ -14,10 +14,10 @@ export default function Navbar() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <figure className="w-12 h-12 rounded-full overflow-hidden border-coral-500">
+        <figure className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#97A87A]">
           <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/497957171_17930717010062249_363873050315841911_n_qiflyq.webp" alt="logo-green-place" />
         </figure>
-        <h2 className="font-extrabold text-3xl bg-gradient-to-r from-[#97A87A] via-[#B5C99A] to-[#97A87A] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">GreenPlace</h2>
+        <h2 className="font-extrabold text-4xl bg-[#97A87A] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] [-webkit-text-stroke:0.5px_rgba(255,255,255,0.4)]">GreenPlace</h2>
         <h4 className="text-xs text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Ideas hechas a mano</h4>
       </motion.div>
       <motion.nav 

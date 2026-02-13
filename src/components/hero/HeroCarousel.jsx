@@ -11,7 +11,7 @@ export default function HeroCarousel() {
       >
         <motion.img 
           className="w-full h-full object-cover" 
-          src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1770687135/background_mediun_knn96j.jpg" 
+          src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1770946402/wallpaperbackgroud_aewomv.jpg" 
           alt="crochet"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ 
