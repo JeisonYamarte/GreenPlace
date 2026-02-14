@@ -60,10 +60,12 @@ export default function AboutUs() {
 
           <div className="relative order-5 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-left gap-2 py-8 px-4">
             <p className="text-[#6b6b6b] text-sm sm:text-base font-semibold z-20">
-              Hola, mi nombre es Valeria. Comencé a hacer crochet en paralelo con mis estudios como fonoaudiologa, y en los descansos entre clases logré asistir a cursos de tejido. Dediqué dos años a estos cursos, después de los cuales recibí un certificado. Pero allí aprendí las cosas más simples: cómo sostener el ganchillo, los tipos de puntos y cómo leer los diagramas.
+              HOLA! Soy Valeria, creadora y dueña de greenPlace, un emprendimiento de productos a crochet.
+              Empecé a tejer a los 11 años, sin embargo lo perfeccioné a los 19 cuando inicié mi emprendimiento, y desde entonces no he dejado de tejer, aprender y compartir lo que sé con otros.
             </p>
             <p className="text-[#6b6b6b] text-sm sm:text-base lg:text-lg font-semibold z-20 mt-2 sm:mt-4">
-              Para convertirse en un verdadero maestro del crochet o del tejido, no es en absoluto necesario graduarse de una universidad ni de cursos costosos. Todo lo que necesitas para comenzar es un ovillo de lana, un ganchillo o agujas de tejer, y tu deseo ilimitado de crear.
+              Quiero que sepas que nadie nace experto, y el tejido es un arte BELLÍSIMO y muy versátil no se trata de inteligencia sino de técnica y repetición.
+              Y te aseguro que es más fácil de lo que crees (también más tardado de lo que crees, no te voy a mentir), pero vale mucho la pena. Si quieres aprender a tejer, o quieres aprender a tejer mejor, aquí estoy para ayudarte.
             </p>
             <Flower 
               className="absolute bottom-20 sm:bottom-40 left-0 opacity-60 z-10 animate-spin-slow" 
