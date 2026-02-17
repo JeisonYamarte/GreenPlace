@@ -44,7 +44,7 @@ export default function Products() {
     
     return (
         <div id="products" className="relative bg-bg h-[800px] max-h-screen lg:h-auto object-contain max-w-8xl lg:mx-auto">
-            <h2 className="text-center text-2xl mb-4 pt-4">mira nuestro productos</h2>
+            <h2 className=" text-center  sm:text-2xl text-[#97A87A] font-semibold  text-2xl mb-4 pt-4">mira nuestro productos</h2>
             <div className='absolute w-full top-[50%] lg:top-auto lg:bottom-0 h-10 bg-gray-100/70 items-center flex z-10'>
                 <nav className="w-full h-full">
                     <ul className='text-xs  h-full w-full grid grid-cols-5 justify-center items-center relative '>
