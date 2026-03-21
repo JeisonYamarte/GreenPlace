@@ -2,7 +2,7 @@ import { motion } from 'motion/react'
 
 export default function Navbar() {
   return (
-    <motion.div 
+    <motion.header
       className="absolute top-0 left-0 right-0 mx-auto flex flex-col items-center justify-center p-4 bg-bg rounded-b-lg text-white h-auto z-10 w-full max-w-3xl"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -15,12 +15,13 @@ export default function Navbar() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <figure className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#97A87A]">
-          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/497957171_17930717010062249_363873050315841911_n_qiflyq.webp" alt="logo-green-place" />
+          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/497957171_17930717010062249_363873050315841911_n_qiflyq.webp" alt="Logo de GreenPlace" />
         </figure>
-        <h2 className="font-extrabold text-4xl bg-[#97A87A] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] [-webkit-text-stroke:0.5px_rgba(255,255,255,0.4)]">GreenPlace</h2>
-        <h4 className="text-xs text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Ideas hechas a mano</h4>
+        <p className="font-extrabold text-4xl bg-[#97A87A] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] [-webkit-text-stroke:0.5px_rgba(255,255,255,0.4)]">GreenPlace</p>
+        <p className="text-xs text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Ideas hechas a mano</p>
       </motion.div>
-      <motion.nav 
+      <motion.nav
+        aria-label="Navegación principal"
         className="w-full mt-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -30,11 +31,11 @@ export default function Navbar() {
         <ul className="flex gap-2 justify-between text-sm font-medium text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
           <li><a href="#aboutUs" className="hover:text-[#B5C99A] transition-colors">Sobre nosotros</a></li>
           <li><a href="#products" className="hover:text-[#B5C99A] transition-colors">Productos</a></li>
-          <li><a href="#courses" className="hover:text-[#B5C99A] transition-colors">Aprender</a></li>
+          <li><a href="#courses" className="hover:text-[#B5C99A] transition-colors">Nuestra historia</a></li>
           <li><a href="#contact" className="hover:text-[#B5C99A] transition-colors">Contacto</a></li>
         </ul>
       </motion.nav>
 
-    </motion.div>
+    </motion.header>
   )
 }

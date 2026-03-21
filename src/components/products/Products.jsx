@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { useInView } from 'react-intersection-observer'
 import ProductCard from './ProductCard'
 import { 
     productsFlowers, 
@@ -15,6 +16,7 @@ export default function Products() {
 
     const [productsToShow, setProductsToShow] = useState(productsFlowers);
     const [category, setCategory] = useState('FLORES');
+    const { ref: gridRef, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
     
 
     const handleCategoryChange = (newCategory) => {
@@ -60,9 +62,13 @@ export default function Products() {
                         {categories.map((cat) => (
                             <li
                                 key={cat}
+                                role="button"
+                                tabIndex={0}
+                                aria-pressed={category === cat}
                                 className={`inline-flex text-center items-center sm:text-xs justify-center cursor-pointer h-full w-full z-10 leading-10 md:leading-none truncate md:truncate-none px-1 transition-colors duration-200 md:justify-center  
                                     ${category === cat ? 'font-bold text-white' : ''}`}
                                 onClick={() => handleCategoryChange(cat)}
+                                onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleCategoryChange(cat)}
                             >
                                 {cat}
                             </li>
@@ -71,17 +77,18 @@ export default function Products() {
                 </nav>
             </div>
             <motion.div 
+                ref={gridRef}
                 className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:grid-rows-1 lg:h-64 "
                 initial="hidden"
-                animate="visible"
+                animate={inView ? "visible" : "hidden"}
                 key={category}
                 variants={{
                     hidden: { opacity: 0 },
                     visible: {
                         opacity: 1,
                         transition: {
-                            staggerChildren: 0.15,
-                            delayChildren: 0.1
+                            staggerChildren: 0.05,
+                            delayChildren: 0.05
                         }
                     }
                 }}

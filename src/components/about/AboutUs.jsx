@@ -28,7 +28,7 @@ export default function AboutUs() {
           </div>
           
           <figure className="order-2 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden">
-            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1767926169/WhatsApp_Image_2025-12-17_at_8.53.48_AM_mparho.jpg" alt="Imagen de crochet" />
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1767926169/WhatsApp_Image_2025-12-17_at_8.53.48_AM_mparho.jpg" alt="Taller de crochet de GreenPlace" loading="lazy" width="800" height="500" />
           </figure>
 
           <div className="relative order-3 md:order-4 lg:order-3 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-center gap-3 sm:gap-4 py-8 px-4">
@@ -55,7 +55,7 @@ export default function AboutUs() {
           </div>
 
           <figure className="order-4 md:order-3 lg:order-4 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden">
-            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1765939145/551013155_17944705692062249_4090516100098057064_n_rhwnvm.webp" alt="Imagen de crochet" />
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1765939145/551013155_17944705692062249_4090516100098057064_n_rhwnvm.webp" alt="Valeria creadora de GreenPlace tejiendo a crochet" loading="lazy" width="800" height="500" />
           </figure>
 
           <div className="relative order-5 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-left gap-2 py-8 px-4">
@@ -84,7 +84,7 @@ export default function AboutUs() {
           </div>
 
           <figure className="order-6 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden">
-            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1768223634/WhatsApp_Image_2025-12-17_at_8.53.47_AM_1_qckfdb.jpg" alt="Imagen de crochet" />
+            <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1768223634/WhatsApp_Image_2025-12-17_at_8.53.47_AM_1_qckfdb.jpg" alt="Productos a crochet hechos a mano en GreenPlace" loading="lazy" width="800" height="500" />
           </figure>
 
         </div>

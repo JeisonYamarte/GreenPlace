@@ -13,6 +13,7 @@ export default function HeroCarousel() {
           className="w-full h-full object-cover" 
           src="https://res.cloudinary.com/dy8f3lczs/image/upload/v1770946402/wallpaperbackgroud_aewomv.jpg" 
           alt="crochet"
+          fetchPriority="high"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ 
             duration: 20, 

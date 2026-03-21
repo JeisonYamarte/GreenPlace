@@ -5,3 +5,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Focus visible — accesibilidad por teclado */
+:focus-visible {
+  outline: 2px solid #97A87A;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Elimina outline en interacciones con mouse/touch */
+:focus:not(:focus-visible) {
+  outline: none;
+}

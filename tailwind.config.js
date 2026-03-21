@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          green: '#97A87A',
+          'green-light': '#B5C99A',
+          'green-dark': '#7a8c62',
+          yellow: '#F2D57E',
+          cream: '#FCF9EA',
+          'cream-dark': '#e8f0dc',
+          coral: '#FF6F61',
+        },
+      },
       keyframes: {
         marquee: {
           from: { transform: "translateX(0)" },

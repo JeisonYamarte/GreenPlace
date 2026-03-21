@@ -26,7 +26,7 @@ const Card = ({Icon, title, subtitle}) => {
     )
 }
 
-export function Porpuse() {
+export function Purpose() {
     const info = [
         {icon: Heart, title: 'encuentra lo que amas', subtitle: 'Descubre productos, nuestra tienda esta repleta de maravillas.'},
         {icon: Gift, title: 'Si buscas algo para regalar', subtitle: 'Los mejores regalos son los hechos a mano.'},
