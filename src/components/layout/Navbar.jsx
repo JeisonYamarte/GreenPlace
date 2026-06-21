@@ -1,11 +1,33 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'motion/react'
 
+const NAV_ITEMS = [
+  { href: '#aboutUs',  label: 'Sobre nosotros', shortLabel: 'Nosotros' },
+  { href: '#products', label: 'Productos',       shortLabel: 'Productos' },
+  { href: '#historia', label: 'Nuestra historia', shortLabel: 'Historia' },
+  { href: '#contact',  label: 'Contacto',        shortLabel: 'Contacto' },
+]
+
+const SECTION_IDS = ['aboutUs', 'products', 'historia', 'contact']
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState(null)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 60)
+
+      let current = null
+      for (const id of SECTION_IDS) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top <= 140) {
+          current = '#' + id
+        }
+      }
+      setActiveSection(current)
+    }
+
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -40,13 +62,36 @@ export default function Navbar() {
 
         <nav aria-label="Navegación principal" className="w-full mt-2">
           <hr className={`mb-2 mt-1 transition-colors duration-500 ${scrolled ? 'border-[#97A87A]/30' : 'border-white/30'}`} />
-          <ul className={`flex gap-2 justify-between text-sm font-medium transition-colors duration-500 ${
-            scrolled ? 'text-gray-700' : 'text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]'
-          }`}>
-            <li><a href="#aboutUs" className="hover:text-[#97A87A] transition-colors">Sobre nosotros</a></li>
-            <li><a href="#products" className="hover:text-[#97A87A] transition-colors">Productos</a></li>
-            <li><a href="#courses" className="hover:text-[#97A87A] transition-colors">Nuestra historia</a></li>
-            <li><a href="#contact" className="hover:text-[#97A87A] transition-colors">Contacto</a></li>
+          <ul className="flex justify-between text-sm font-medium">
+            {NAV_ITEMS.map((item) => {
+              const isActive = activeSection === item.href
+              return (
+                <li key={item.href} className="min-w-0">
+                  <a
+                    href={item.href}
+                    className={`relative block pb-0.5 truncate transition-colors duration-300 ${
+                      isActive
+                        ? 'text-[#97A87A] font-bold'
+                        : scrolled
+                          ? 'text-gray-700 hover:text-[#97A87A]'
+                          : 'text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] hover:text-[#97A87A]'
+                    }`}
+                  >
+                    {/* Label corto en mobile, completo en sm+ */}
+                    <span className="sm:hidden">{item.shortLabel}</span>
+                    <span className="hidden sm:inline">{item.label}</span>
+
+                    {isActive && (
+                      <motion.span
+                        layoutId="nav-active-indicator"
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#97A87A] rounded-full"
+                        transition={{ type: 'spring', stiffness: 500, damping: 35 }}
+                      />
+                    )}
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </nav>
       </div>

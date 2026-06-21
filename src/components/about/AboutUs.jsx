@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import Flower from "../SVG/flower1"
+import LazyImage from "../ui/LazyImage"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -25,7 +26,7 @@ const viewportOpts = { once: true, margin: '-80px' }
 
 export default function AboutUs() {
   return (
-    <section id="courses" className="bg-bg w-full mt-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <section id="historia" className="bg-bg w-full mt-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
       <motion.h2
         className="text-center text-xl sm:text-2xl mb-6 text-[#97A87A] font-semibold"
         initial="hidden"
@@ -40,10 +41,7 @@ export default function AboutUs() {
 
         <motion.div
           className="relative order-1 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-center gap-3 sm:gap-4 py-8 px-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={slideLeft}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={slideLeft}
         >
           <h3 className="font-bold text-2xl sm:text-3xl lg:text-4xl mb-2 sm:mb-4 z-20 text-[#3A3A3A]">HAZLO TU MISMO</h3>
           <p className="text-[#6b6b6b] text-sm sm:text-base lg:text-lg font-semibold z-20">
@@ -55,20 +53,20 @@ export default function AboutUs() {
 
         <motion.figure
           className="order-2 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={scaleIn}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={scaleIn}
         >
-          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1767926169/WhatsApp_Image_2025-12-17_at_8.53.48_AM_mparho.jpg" alt="Taller de crochet de GreenPlace" loading="lazy" width="800" height="500" />
+          <LazyImage
+            src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1767926169/WhatsApp_Image_2025-12-17_at_8.53.48_AM_mparho.jpg"
+            alt="Taller de crochet de GreenPlace"
+            loading="lazy"
+            width="800"
+            height="500"
+          />
         </motion.figure>
 
         <motion.div
           className="relative order-3 md:order-4 lg:order-3 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-center gap-3 sm:gap-4 py-8 px-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={slideRight}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={slideRight}
         >
           <h3 className="font-bold text-2xl sm:text-3xl lg:text-4xl mb-2 sm:mb-4 z-20 text-[#3A3A3A]">
             Amo el crochet y amo inspirar a otros a crear.
@@ -82,20 +80,20 @@ export default function AboutUs() {
 
         <motion.figure
           className="order-4 md:order-3 lg:order-4 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={scaleIn}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={scaleIn}
         >
-          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1765939145/551013155_17944705692062249_4090516100098057064_n_rhwnvm.webp" alt="Valeria creadora de GreenPlace tejiendo a crochet" loading="lazy" width="800" height="500" />
+          <LazyImage
+            src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1765939145/551013155_17944705692062249_4090516100098057064_n_rhwnvm.webp"
+            alt="Valeria creadora de GreenPlace tejiendo a crochet"
+            loading="lazy"
+            width="800"
+            height="500"
+          />
         </motion.figure>
 
         <motion.div
           className="relative order-5 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] flex flex-col justify-center text-left gap-2 py-8 px-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={slideLeft}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={slideLeft}
         >
           <p className="text-[#6b6b6b] text-sm sm:text-base font-semibold z-20">
             HOLA! Soy Valeria, creadora y dueña de greenPlace, un emprendimiento de productos a crochet.
@@ -111,12 +109,15 @@ export default function AboutUs() {
 
         <motion.figure
           className="order-6 min-h-[50vh] sm:min-h-[55vh] md:min-h-[45vh] lg:min-h-[50vh] max-h-[500px] overflow-hidden"
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOpts}
-          variants={scaleIn}
+          initial="hidden" whileInView="visible" viewport={viewportOpts} variants={scaleIn}
         >
-          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1768223634/WhatsApp_Image_2025-12-17_at_8.53.47_AM_1_qckfdb.jpg" alt="Productos a crochet hechos a mano en GreenPlace" loading="lazy" width="800" height="500" />
+          <LazyImage
+            src="https://res.cloudinary.com/dy8f3lczs/image/upload/w_800,f_auto,q_auto/v1768223634/WhatsApp_Image_2025-12-17_at_8.53.47_AM_1_qckfdb.jpg"
+            alt="Productos a crochet hechos a mano en GreenPlace"
+            loading="lazy"
+            width="800"
+            height="500"
+          />
         </motion.figure>
 
       </div>

@@ -10,13 +10,20 @@ import {
   productsOthers
 } from './products.data'
 
-const categories = ['FLORES', 'PERSONAJES', 'GORROS', 'ACCESORIOS', 'OTROS']
+const CATEGORIES = [
+  { key: 'FLORES',     label: 'Flores',     shortLabel: 'Flores'  },
+  { key: 'PERSONAJES', label: 'Personajes', shortLabel: 'Perso.'  },
+  { key: 'GORROS',     label: 'Gorros',     shortLabel: 'Gorros'  },
+  { key: 'ACCESORIOS', label: 'Accesorios', shortLabel: 'Acces.'  },
+  { key: 'OTROS',      label: 'Otros',      shortLabel: 'Otros'   },
+]
+
 const categoryMap = {
-  FLORES: productsFlowers,
+  FLORES:     productsFlowers,
   PERSONAJES: productsCharacters,
-  GORROS: productsHats,
+  GORROS:     productsHats,
   ACCESORIOS: productsAccessories,
-  OTROS: productsOthers,
+  OTROS:      productsOthers,
 }
 
 export default function Products() {
@@ -24,9 +31,9 @@ export default function Products() {
   const [productsToShow, setProductsToShow] = useState(productsFlowers)
   const { ref: gridRef, inView } = useInView({ triggerOnce: true, threshold: 0.05 })
 
-  const handleCategoryChange = (newCategory) => {
-    setCategory(newCategory)
-    setProductsToShow(categoryMap[newCategory] ?? productsFlowers)
+  const handleCategoryChange = (key) => {
+    setCategory(key)
+    setProductsToShow(categoryMap[key] ?? productsFlowers)
   }
 
   return (
@@ -44,25 +51,26 @@ export default function Products() {
       <div className="relative">
         {/* Category nav — natural flow on mobile, absolute overlay on desktop */}
         <nav className="mb-3 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:mb-0 lg:z-10">
-          <ul className="relative grid grid-cols-5 h-11 bg-gray-100/80 rounded-xl lg:rounded-none overflow-hidden mx-4 lg:mx-0 text-xs font-medium">
+          <ul className="relative grid grid-cols-5 h-11 bg-gray-100/80 rounded-xl lg:rounded-none overflow-hidden mx-4 lg:mx-0">
             <motion.li
               className="absolute top-0 left-0 w-[20%] h-full bg-[#97A87A] rounded-lg lg:rounded-none z-0 pointer-events-none"
               transition={{ type: 'spring', stiffness: 500, damping: 35 }}
-              animate={{ left: `${categories.indexOf(category) * 20}%` }}
+              animate={{ left: `${CATEGORIES.findIndex(c => c.key === category) * 20}%` }}
             />
-            {categories.map((cat) => (
+            {CATEGORIES.map((cat) => (
               <li
-                key={cat}
+                key={cat.key}
                 role="button"
                 tabIndex={0}
-                aria-pressed={category === cat}
-                className={`relative flex items-center justify-center cursor-pointer h-full z-10 px-1 truncate transition-colors duration-200 select-none ${
-                  category === cat ? 'text-white font-bold' : 'text-gray-600'
+                aria-pressed={category === cat.key}
+                className={`relative flex items-center justify-center cursor-pointer h-full z-10 transition-colors duration-200 select-none ${
+                  category === cat.key ? 'text-white font-bold' : 'text-gray-600'
                 }`}
-                onClick={() => handleCategoryChange(cat)}
-                onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleCategoryChange(cat)}
+                onClick={() => handleCategoryChange(cat.key)}
+                onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleCategoryChange(cat.key)}
               >
-                {cat}
+                <span className="sm:hidden text-[10px] font-medium leading-none truncate px-0.5">{cat.shortLabel}</span>
+                <span className="hidden sm:block text-xs font-medium truncate px-1">{cat.label}</span>
               </li>
             ))}
           </ul>
@@ -85,7 +93,7 @@ export default function Products() {
         >
           <AnimatePresence mode="wait">
             {productsToShow.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} category={category} />
             ))}
           </AnimatePresence>
         </motion.div>

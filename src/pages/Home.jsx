@@ -4,6 +4,8 @@ import AboutUs from '../components/about/AboutUs'
 import Products from '../components/products/Products'
 import CTA from '../components/cta/CTA'
 import { Purpose } from '../components/purpose/Purpose'
+import CustomOrder from '../components/custom-order/CustomOrder'
+import FAQ from '../components/faq/FAQ'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Purpose />
       <Products />
       <AboutUs />
+      <CustomOrder />
+      <FAQ />
       <CTA />
     </div>
   )
