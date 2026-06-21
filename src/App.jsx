@@ -60,12 +60,20 @@ function WhatsAppFloat() {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Store',
+  '@type': ['LocalBusiness', 'Store'],
   name: 'GreenPlace',
-  description: 'Tienda especializada en productos de crochet hechos a mano, únicos y personalizados.',
+  description: 'Tienda de crochet y tejido artesanal hecho a mano en Venezuela. Flores, gorros, personajes y accesorios tejidos. Pedidos personalizados con envíos a todo el país.',
   url: 'https://greenplace.life',
   logo: 'https://greenplace.life/favicon.png',
-  image: 'https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg',
+  image: 'https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg',
+  priceRange: '$$',
+  currenciesAccepted: 'USD, VES',
+  paymentAccepted: 'Pago móvil, transferencia bancaria, efectivo',
+  knowsLanguage: 'es',
+  areaServed: {
+    '@type': 'Country',
+    name: 'Venezuela',
+  },
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Punto Fijo',
@@ -84,6 +92,61 @@ const jsonLd = {
   ],
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Cuánto tiempo demora un pedido de crochet?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Depende de la complejidad de la pieza: entre 5 y 15 días hábiles. Para fechas importantes te recomendamos contactarnos con anticipación para asegurar la entrega a tiempo.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo elegir los colores y tamaños de mi pedido?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, todos los pedidos personalizados se adaptan completamente a tus preferencias de color, tamaño y detalles. Solo cuéntanos tu idea y lo hacemos.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Hacen envíos de crochet a todo Venezuela?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, enviamos a todo el país a través de encomiendas. El costo y la empresa de envío se coordinan contigo por WhatsApp según tu ubicación.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Cómo realizo el pago?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Aceptamos pago móvil, transferencia bancaria y efectivo en USD o Bs. Los detalles de pago se coordinan directamente por WhatsApp al confirmar tu pedido.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Puedo pedir un diseño personalizado que no está en el catálogo?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, podemos crear casi cualquier diseño personalizado a crochet. Cuéntanos tu idea en el formulario de nuestra web o escríbenos directamente y lo hacemos realidad.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Hacen pedidos de crochet para eventos o empresas?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí, hacemos detalles personalizados para graduaciones, baby showers, cumpleaños, bodas y más. Contáctanos para coordinar pedidos en cantidad.',
+      },
+    },
+  ],
+}
+
 function App() {
   return (
     <HelmetProvider>
@@ -91,28 +154,30 @@ function App() {
         <Helmet>
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.png" />
-          <title>GreenPlace | Productos de Crochet Hechos a Mano</title>
-          <meta name="description" content="Bienvenido a GreenPlace, tu tienda especializada en productos de crochet, hechos a mano, únicos y personalizados." />
-          <meta name="keywords" content="crochet, productos de crochet, hechos a mano, tienda online, regalos personalizados, artículos de crochet, venezuela, falcon, punto fijo, decoración, accesorios" />
+          <title>GreenPlace | Crochet Hecho a Mano en Venezuela</title>
+          <meta name="description" content="Tienda de crochet y tejido artesanal en Venezuela. Flores, gorros, personajes y accesorios hechos a mano. Pedidos personalizados con envíos a todo el país." />
+          <meta name="keywords" content="crochet venezuela, crochet hecho a mano, tejido a mano venezuela, costura venezuela, amigurumi venezuela, flores crochet, gorros tejidos, personajes crochet, accesorios tejidos, artesanias venezuela, artesanias falcon, pedidos personalizados crochet, crochet punto fijo, regalos artesanales venezuela, tejido artesanal" />
           <link rel="canonical" href="https://greenplace.life" />
           {/* Open Graph */}
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="es_VE" />
           <meta property="og:site_name" content="GreenPlace" />
           <meta property="og:url" content="https://greenplace.life" />
-          <meta property="og:title" content="GreenPlace | Productos de Crochet Hechos a Mano" />
-          <meta property="og:description" content="Visita GreenPlace, tu tienda especializada en productos de crochet, hechos a mano, únicos y personalizados. Descubre nuestra amplia selección de artículos de crochet y encuentra el regalo perfecto para tus seres queridos." />
-          <meta property="og:image" content="https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg" />
+          <meta property="og:title" content="GreenPlace | Crochet Hecho a Mano en Venezuela" />
+          <meta property="og:description" content="Tienda de crochet y tejido artesanal en Venezuela. Flores, gorros, personajes y accesorios hechos a mano. Pedidos personalizados con envíos a todo el país." />
+          <meta property="og:image" content="https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:image:alt" content="GreenPlace - Productos de Crochet Hechos a Mano" />
+          <meta property="og:image:alt" content="GreenPlace - Crochet y Tejido Artesanal Hecho a Mano en Venezuela" />
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="GreenPlace | Productos de Crochet Hechos a Mano" />
-          <meta name="twitter:description" content="Tienda especializada en productos de crochet hechos a mano, únicos y personalizados." />
-          <meta name="twitter:image" content="https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg" />
-          {/* JSON-LD */}
+          <meta name="twitter:title" content="GreenPlace | Crochet Hecho a Mano en Venezuela" />
+          <meta name="twitter:description" content="Tienda de crochet y tejido artesanal en Venezuela. Flores, gorros, personajes y accesorios hechos a mano. Pedidos personalizados." />
+          <meta name="twitter:image" content="https://res.cloudinary.com/dy8f3lczs/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/v1770946402/wallpaperbackgroud_aewomv.jpg" />
+          {/* JSON-LD — LocalBusiness */}
           <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+          {/* JSON-LD — FAQPage */}
+          <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
         </Helmet>
         <Home />
         <BackToTop />

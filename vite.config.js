@@ -7,4 +7,8 @@ export default defineConfig({
   server: {
     allowedHosts: ['.ngrok.io'],
   },
+  ssr: {
+    // motion usa APIs de browser — se bundlea en el SSR para evitar errores de importación
+    noExternal: ['motion'],
+  },
 })
